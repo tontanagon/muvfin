@@ -12,7 +12,7 @@ import Footer from '../components/footer.vue'
     <div class="container">
         <h1 class="center">Welcome to Muvfin!</h1>
         <div>
-            <h2 class="center">Sign Up</h2>
+            <h2 class="center">Sign up</h2>
         </div>
     </div><br>
     <div class="row container-center ">

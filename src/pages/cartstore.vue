@@ -4,7 +4,7 @@
     <div class="card-2-column1">
       <div class="frame-parent">
         <input type="checkbox" id="selectAll" v-model="selectAll" @change="selectAllItems">
-        <b class="b1">เลือกทั้งหมด</b>
+        <b class="b1">Select all</b>
       </div>
     </div>
     <div class="card-2-column mb-3" v-for="item in data.getCartItems" :key="item.id">
@@ -164,6 +164,8 @@ import { userlogin } from '../store/user'
 import { useShoppingStore } from "../store/movies"
 const data = useShoppingStore();
 const log = ref(userlogin().login)
+
+
 const totalItems = computed(() => {
   return data.getCartItems.reduce((total, item) => {
     return item.checked ? total + item.quantity : total;
@@ -203,6 +205,9 @@ const selectAll = ref(false);
 watchEffect(() => {
   selectAllItems();
 });
+
+
+
 
 
 </script>

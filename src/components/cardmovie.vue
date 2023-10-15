@@ -21,11 +21,11 @@ const listrecomment3 = ref([
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
         <div class="row justify-content-center">
-        <div class="card mb-3 col m-3" style="max-width: 400px;" v-for="i in listrecomment1">
+        <div class="card mb-3 col m-3" style="max-width: 400px;" v-for="i in listrecomment1" :key="i">
             <div class="row g-0">
                 <div class="col-md-8 align-self-center">
                     <div class="card-body">
-                        <h5 class="card-title">{{ i.name }}</h5>
+                        <h5 class="card-title name">{{ i.name }}</h5>
                         <p class="card-text">{{ i.category }}</p>
 
                     </div>
@@ -39,12 +39,12 @@ const listrecomment3 = ref([
             </div>
             <div class="carousel-item">
         <div class="row justify-content-center">
-        <div class="card mb-3 col m-3" style="max-width: 400px;" v-for="i in listrecomment2">
+        <div class="card mb-3 col m-3" style="max-width: 400px;" v-for="i in listrecomment2" :key="i">
             <div class="row g-0">
                 <div class="col-md-8 align-self-center">
                     <div class="card-body">
-                        <h5 class="card-title">{{ i.name }}</h5>
-                        <p class="card-text">CATEGORY : {{ i.category }}</p>
+                        <h5 class="card-title name">{{ i.name }}</h5>
+                        <p class="card-text">{{ i.category }}</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -56,12 +56,12 @@ const listrecomment3 = ref([
             </div>
             <div class="carousel-item">
         <div class="row justify-content-center">
-        <div class="card mb-3 col m-3" style="max-width: 400px;" v-for="i in listrecomment3">
+        <div class="card mb-3 col m-3" style="max-width: 400px;" v-for="i in listrecomment3" :key="i">
             <div class="row g-0">
                 <div class="col-md-8 align-self-center">
                     <div class="card-body">
-                        <h5 class="card-title">{{ i.name }}</h5>
-                        <p class="card-text">CATEGORY : {{ i.category }}</p>
+                        <h5 class="card-title name">{{ i.name }}</h5>
+                        <p class="card-text">{{ i.category }}</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -87,4 +87,12 @@ const listrecomment3 = ref([
 .card{
     background-color: #F9EEB6;
 }
+
+p{
+    color: #777777;
+}
+.name{
+    font-weight: bold;
+}
+
 </style>

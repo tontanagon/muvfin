@@ -24,7 +24,7 @@ const list = useShoppingStore();
           <th scope="col"></th>
           <th scope="col">Name</th>
           <th scope="col">Price of movie</th>
-          <th scope="col">order</th>
+          <th scope="col">Order</th>
           <th scope="col">Total price</th>
         </tr>
       </thead>
@@ -46,13 +46,13 @@ const list = useShoppingStore();
           </td>
           <td>{{ i.name }}</td>
           <td>{{ i.price }} Bath per month</td>
-          <td>{{ i.quantity }} Order</td>
+          <td>{{ i.quantity }} Month</td>
           <td>{{ i.price * i.quantity }} Bath</td>
         </tr>
         <tr class="rounded-pill shadow">
           <td class="va m-3 p-3" scope="row">
             total price <br />discount 10%<br />
-            Order Total( {{ m[0] }} order)
+            Order Total( {{ m[0] }} Month)
           </td>
           <td class="va m-3"></td>
           <td class="va m-3"></td>

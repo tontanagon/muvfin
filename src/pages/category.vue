@@ -43,7 +43,7 @@ const toggleCategory = (category) => {
   <RouterView></RouterView> 
     <headermuf class="fixed-top"></headermuf>
  
-    <div class="row" style="margin-top: 150px;">
+    <div class="row container-fluid" style="margin-top: 150px;">
     <div class="col-2">
       <div class="row" style=" position: sticky; top: 200px;">
         <div class="col-2 text-center">

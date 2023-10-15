@@ -25,13 +25,13 @@ const log = userlogin()
     </div>
     <div class="m-3">
       <!--login แล้ว-->        
-        <a class="btn button m-3" v-if="log.login"><RouterLink class="nav-link" to="cart"><i class="fa-solid fa-cart-shopping fs-2"></i></RouterLink></a>
-        <button type="button" class="btn btn-light m-2 rounded-pill" @click="log.logined()" v-if="log.login"><RouterLink class="nav-link" to="login">Logout <i class="fa-solid fa-user"></i></RouterLink></button>
+        <a class="btn cart m-3 rounded-pill" v-if="log.login"><RouterLink class="nav-link" to="cart"><i class="fa-solid fa-cart-shopping fs-3"></i></RouterLink></a>
+        <button type="button" class="btn button m-2 rounded-pill" @click="log.logined()" v-if="log.login"><RouterLink class="nav-link" to="login">Logout <i class="fa-solid fa-user"></i></RouterLink></button>
 
 
 
-        <button type="button" class="btn btn-light m-2 rounded-pill" v-if="!log.login"><RouterLink class="nav-link" to="signup">Sign up</RouterLink></button>
-        <button type="button" class="btn btn-light m-2 rounded-pill" v-if="!log.login"><RouterLink class="nav-link" to="login"> Sign In</RouterLink></button>
+        <button type="button" class="btn button m-2 rounded-pill" v-if="!log.login"><RouterLink class="nav-link" to="signup">Sign up</RouterLink></button>
+        <button type="button" class="btn button m-2 rounded-pill" v-if="!log.login"><RouterLink class="nav-link" to="login"> Sign in</RouterLink></button>
         <button class="navbar-toggler m-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,16 +41,22 @@ const log = userlogin()
 </template>
 
 <style scoped>
-
+.cart {
+  color: #374785;
+}
+.button{
+  background-color: white;
+  border-color: #374785;
+  color: #374785;
+}
 .bgheader {
     background-color: #A8D1E7;
     color: black;
 }
-.btn-lighs{
-    border-color: #374785;
-    color: #374785;
-}
+
 .button:hover{
   background-color: #374785;
+  color: white;
 }
+
 </style>

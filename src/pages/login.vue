@@ -15,7 +15,7 @@ const login = userlogin()
     <div class="container">
         <h1 class="center">Welcome to Muvfin!</h1>
         <div>
-            <h2 class="center">Sign In</h2>
+            <h2 class="center">Sign in</h2>
         </div>
     </div><br>
     <div >

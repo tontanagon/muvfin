@@ -69,7 +69,7 @@ export const useShoppingStore = defineStore('shopping', {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'กรุณาเข้าสู่ระบบก่อนทำรายการ',
+                    title: 'Please sign in before purchase',
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -78,7 +78,7 @@ export const useShoppingStore = defineStore('shopping', {
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    title: 'เพิ่มหนังลงตะกร้าเรียบร้อยเเล้ว',
+                    title: 'Added to cart',
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -103,7 +103,7 @@ export const useShoppingStore = defineStore('shopping', {
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    title: 'เพิ่มจำนวนหนังเรียบร้อย',
+                    title: 'has increased',
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -119,7 +119,7 @@ export const useShoppingStore = defineStore('shopping', {
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    title: 'ลดจำนวนหนังเรียบร้อย',
+                    title: 'has decreased',
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -130,7 +130,7 @@ export const useShoppingStore = defineStore('shopping', {
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: 'ลบหนังออกจากตะกร้าเรียบร้อย',
+                title: 'Deleted out of cart',
                 showConfirmButton: false,
                 timer: 1500
             });
@@ -146,7 +146,7 @@ export const useShoppingStore = defineStore('shopping', {
                     Swal.fire({
                         position: 'center',
                         icon: 'success',
-                        title: 'ทำรายการเสร็จสิ้น',
+                        title: 'Complete the purchase',
                         showConfirmButton: false,
                         timer: 1500
                     });
@@ -154,7 +154,7 @@ export const useShoppingStore = defineStore('shopping', {
                     Swal.fire({
                         position: 'center',
                         icon: 'error',
-                        title: 'กรุณาเลือกสินค้าที่ต้องการชำระเงิน',
+                        title: 'Please select for purchase',
                         showConfirmButton: false,
                         timer: 1500
                     });
@@ -163,7 +163,7 @@ export const useShoppingStore = defineStore('shopping', {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'กรุณาเพิ่มรายการ',
+                    title: 'Please select movie',
                     showConfirmButton: false,
                     timer: 1500
                 });
