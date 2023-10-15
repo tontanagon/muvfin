@@ -59,7 +59,7 @@ const list = useShoppingStore();
           <td class="va m-3"></td>
           <td class="va m-3"></td>
           <td class="m-3" style="background-color: #b6def9">
-            {{ m[2] }} Bath <br />{{ m[1] }} Bath <br />{{ m[2] - m[1] }} Bath
+            {{ m[0]*29 }} Bath <br />{{ m[1] }} Bath <br />{{ m[2] }} Bath
           </td>
         </tr>
       </tbody>
